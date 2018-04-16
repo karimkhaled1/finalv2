@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karim.finalv2.products"
+    >
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="welcome mash 3rf 2a2ool el  sara7a"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/sd"
+        android:orientation="horizontal"
+        android:background="#4E45C6">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:id="@+id/menubutton"
+            android:src="@drawable/menuuu"/>
+    </LinearLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawer"
+        android:layout_below="@+id/sd"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contanier">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#FCFCFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:onClick="sign_in_up"
+            android:text="sgin in/up"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/playstore"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:onClick="allProducts"
+            android:text="all products"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/are"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:onClick="MyProducts"
+            android:layout_margin="2dp"
+            android:text="my products"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:onClick="addProduct"
+            android:text="add prduct"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
